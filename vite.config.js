@@ -1,0 +1,18 @@
+import {defineConfig} from "vite"
+import react from '@vitejs/plugin-react'
+
+export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
+  if (command === 'serve') {
+    return {
+      plugins: [react()],
+      server: {
+        port: 3000
+      }
+    }
+  } else {
+    // command === 'build'
+    return {
+      plugins: [react()],
+    }
+  }
+})
