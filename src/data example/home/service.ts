@@ -1,7 +1,7 @@
 
 import { getContent } from '../../utils/function'
 import { Service } from '../../utils/type'
-import { URLS } from "../../route" ;
+import { URLS } from '../../utils/url'
 
 const content: any = {
     en: {
