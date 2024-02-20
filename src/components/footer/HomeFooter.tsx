@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { URLS } from "../../data/url";
+import { URLS } from "../../utils/url";
 import { getUrl } from "../../utils/function";
 
 let t: string = localStorage.getItem("dark") || "";

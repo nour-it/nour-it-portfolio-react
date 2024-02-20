@@ -2,7 +2,7 @@
 import React from "react";
 import NourIcon from "../core/NourIcon";
 import { Link } from "react-router-dom";
-import { URLS } from "../../data/url";
+import { URLS } from "../../utils/url";
 import { getContent, getUrl } from "../../utils/function";
 
 export default function ExperienceHeader() {

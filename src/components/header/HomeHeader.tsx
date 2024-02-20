@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { getContent, getUrl } from "../../utils/function";
 import { Link } from "react-router-dom";
-import { URLS } from "../../data/url";
+import { URLS } from "../../utils/url";
 import NourIcon from "../core/NourIcon";
 import anime from 'animejs/lib/anime.es.js';
 
