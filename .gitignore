@@ -32,4 +32,4 @@ dist
 *.lock
 *.log
 
-src/data
+/src/data
