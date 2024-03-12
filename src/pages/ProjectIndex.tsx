@@ -31,7 +31,8 @@ export default function ProjecteIndex(props: any) {
 
   const [state, setState] = useState({
     project: PROJECT.projects.find(p => p.link === window.location.hash),
-    url: new URL(window.location.href)
+    url: new URL(window.location.href),
+    theme: localStorage.getItem("theme")
   })
 
   makeUrl = (url: string): string => {
@@ -56,9 +57,21 @@ export default function ProjecteIndex(props: any) {
 
   let theme = localStorage.getItem("theme") || ""
 
+  function onThemeChange(): void {
+    let body = document.body;
+    if (body.classList.length > 0) {
+      setState({ ...state, theme: "" });
+      localStorage.setItem("theme", "");
+    } else {
+      setState({ ...state, theme: "dark" });
+      localStorage.setItem("theme", "dark");
+    }
+    body.classList.toggle("dark");
+  }
+
   return (
     <NourContainer >
-      <ExperienceHeader />
+      <ExperienceHeader onThemeChange={onThemeChange} theme={state.theme} />
       <div className="ctn-projects">
         {state.project && <div className='projects info'>
           {projectItem(state.project)}

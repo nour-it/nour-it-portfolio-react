@@ -6,8 +6,6 @@ import ProjectIndex from "./pages/ProjectIndex";
 import SupportIndex from "./pages/SupportIndex";
 import { URLS } from "./utils/url";
 
-
-
 const defaults: RouteObject[] = [
     {
         path: URLS.home,

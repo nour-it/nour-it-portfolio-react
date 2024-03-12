@@ -4,11 +4,11 @@
 
 c'est un portfolio fait en utilisant la librairie
 
-- [![react](https://) react](https://react.dev/)
-- [![reactrouter](https://) React Router](https://reactrouter.com/en/main) pour gérer les différentes pages
+- [![react](https://) react](https://react.dev/){:target="_blank"}
+- [![reactrouter](https://) React Router](https://reactrouter.com/en/main){:target="_blank"} pour gérer les différentes pages
 - sass
 - animejs
-- [live demo](https://nour-it-portfolio.web.app/#home)
+- [live demo](https://nour-it-portfolio.web.app/#home){:target="_blank"}
 
 
 vous pouvez utiliser le projet avec firebase ![firebase](https://www.gstatic.com/devrel-devsite/prod/v5ba20c1e081870fd30b7c8ebfa8711369a575956c1f44323664285c05468c6a4/firebase/images/favicon.png)

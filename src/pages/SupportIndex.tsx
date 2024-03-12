@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NourContainer from '../components/core/NourContainer'
 import ExperienceHeader from '../components/header/ExperienceHeader'
 import HomeFooter from '../components/footer/HomeFooter'
@@ -31,11 +31,23 @@ function supportItem(support: support, index: number, array: Object[]): React.Re
 }
 
 export default function SupportIndex(props: any) {
+  const [state, setState] = useState({ theme: localStorage.getItem("theme") });
+  function onThemeChange(): void {
+    let body = document.body;
+    if (body.classList.length > 0) {
+      setState({ ...state, theme: "" });
+      localStorage.setItem("theme", "");
+    } else {
+      setState({ ...state, theme: "dark" });
+      localStorage.setItem("theme", "dark");
+    }
+    body.classList.toggle("dark");
+  }
 
   let theme = localStorage.getItem("theme") || ""
   return (
     <NourContainer >
-      <ExperienceHeader />
+      <ExperienceHeader onThemeChange={onThemeChange} theme={state.theme}/>
       {SUPPORT.supports.map(supportItem)}
       <HomeFooter theme={theme} />
     </NourContainer>

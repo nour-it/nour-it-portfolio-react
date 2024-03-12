@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NourContainer from "../components/core/NourContainer";
 import ExperienceHeader from "../components/header/ExperienceHeader";
 import HomeFooter from "../components/footer/HomeFooter";
@@ -33,9 +33,21 @@ function experienceItem(
 
 export default function ExperienceIndex(props: any) {
   let theme = localStorage.getItem("theme") || "";
+  const [state, setState] = useState({ theme: localStorage.getItem("theme") });
+  function onThemeChange(): void {
+    let body = document.body;
+    if (body.classList.length > 0) {
+      setState({ ...state, theme: "" });
+      localStorage.setItem("theme", "");
+    } else {
+      setState({ ...state, theme: "dark" });
+      localStorage.setItem("theme", "dark");
+    }
+    body.classList.toggle("dark");
+  }
   return (
     <NourContainer>
-      <ExperienceHeader />
+      <ExperienceHeader onThemeChange={onThemeChange} theme={state.theme}/>
       {EXPERIENCE.experiences.map(experienceItem)}
       <HomeFooter theme={theme} />
     </NourContainer>

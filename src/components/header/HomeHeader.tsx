@@ -38,8 +38,9 @@ export default function HomeHeader({ onThemeChange, theme }: any) {
 
 
   function onActiveNav(e: React.MouseEvent) {
+    
     if (window.innerWidth < 745) {
-      if (headerRef.current?.classList.contains("active")) {
+      if (navRef.current?.classList.contains("active")) {
         document.body.style.overflow = "auto";
       } else {
         document.body.style.overflow = "hidden";
@@ -48,6 +49,10 @@ export default function HomeHeader({ onThemeChange, theme }: any) {
       navRef.current?.classList.toggle("active");
       navRef.current?.classList.toggle("blur");
     }
+  }
+
+  function onClickBurger(e: React.MouseEvent) {
+    onActiveNav(e)
   }
 
   return (
@@ -63,7 +68,7 @@ export default function HomeHeader({ onThemeChange, theme }: any) {
       <nav onClick={onActiveNav} ref={navRef}>
         <ul>{Object.keys(MENU_ITEMS).map(menuItem)}</ul>
       </nav>
-      <div className="burger__wrapper" onClick={onActiveNav}>
+      <div className="burger__wrapper" onClick={onClickBurger}>
         <div className="burger"></div>
       </div>
     </header>
