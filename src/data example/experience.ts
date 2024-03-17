@@ -4,26 +4,10 @@ import { Experience } from "../utils/type";
 
 const content: any = {
     en: {
-        experiences: [
-            {
-                title: "title",
-                adress: "Tixpros, Lome-Togo",
-                periode: "Oct 2021 - Dec 2021",
-                description: ` description
-                
-            `},
-        ],
+        experiences: [],
     },
     fr: {
-        experiences: [
-            {
-                title: 'titre',
-                adress: 'Tixpros, Lome-Togo',
-                date: 'Oct 2021 - Dec 2021',
-                description: `
-                description
-                `},
-        ],
+        experiences: [],
     }
 }
 

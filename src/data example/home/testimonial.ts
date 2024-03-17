@@ -5,16 +5,12 @@ const content: any = {
     en: {
         title: "Testimonial",
         subtitle: "My client saying",
-        clients: [
-          
-        ],
+        clients: [],
     },
     fr: {
         title: "Témoignage",
         subtitle: "Ce que disent mes clients",
-        clients: [
-           
-        ],
+        clients: [],
     }
 
 }

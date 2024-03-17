@@ -5,17 +5,13 @@ import { HomeIntro } from "../../utils/type";
 const content: any = {
     en: {
         title: "Web and Mobile App developer",
-        descriptions: [
-            ``
-        ],
+        descriptions: [],
         say: "say hello"
 
     },
     fr: {
         title: "Développeur d'applications Web et mobiles",
-        descriptions: [
-            ``
-        ],
+        descriptions: [],
         say: "dire bonjour"
     }
 }
