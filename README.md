@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src="./public/logo512.png"/>
+  <img src="./public/logo512.png" width="150"/>
   <h1>Nour It Portfolio</h1>
 </div>
 
@@ -14,10 +14,10 @@
   - [4-services](#4-support)
   - [5-clients ou témoignages](#5-clients-ou-témoignages)
   - [6-Expériences](#6-expériences)
-- [Contribuer](#contribuer)
+<!-- - [Contribuer](#contribuer)
 - [Licence](#licence)
 - [Auteurs](#auteurs)
-- [Remerciements](#remerciements)
+- [Remerciements](#remerciements) -->
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
