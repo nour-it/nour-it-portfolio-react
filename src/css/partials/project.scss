@@ -20,6 +20,12 @@
   margin-left: calc(var(--space) * 2);
 }
 
+.project-info > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space) * 1)
+}
+
 .close {
   position: absolute;
   top: calc(var(--space) * 2);

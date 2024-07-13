@@ -65,20 +65,8 @@ function footerItem2(
 
 const links: Object[] = [
   {
-    img: "Facebook.svg",
-    link: "https://www.facebook.com/nourxxIt/",
-  },
-  {
-    img: "Twitter.svg",
-    link: "https://twitter.com/nour_it_",
-  },
-  {
     img: "LinkedIn.svg",
     link: "https://www.linkedin.com/in/nour-it/",
-  },
-  {
-    img: "Instagram.svg",
-    link: "https://www.instagram.com/nour.it.ng/",
   },
   {
     img: "Github.svg",

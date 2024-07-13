@@ -82,7 +82,28 @@
 
 .logo ~ span {
   margin-left: calc(var(--space) * 1);
+  cursor: pointer;
 }
+
+.hover {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  aspect-ratio: 1;
+}
+
+.hover:hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.156);
+  height: calc(var(--space) * 4);
+  aspect-ratio: 1;
+  top: 50%;
+  left: -30%;
+  transform: translate(0%, -50%);
+}
+
 .logo ~ span svg {
   margin-bottom: calc(var(--space) * -0.4);
 }

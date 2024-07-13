@@ -61,7 +61,7 @@ export default function HomeHeader({ onThemeChange, theme }: any) {
         <Link to={getUrl(URLS.home)} className="logo">
           Nour<span>It</span>
         </Link>
-        <span onClick={onThemeChange}>
+        <span onClick={onThemeChange} className="hover">
           <NourIcon id={theme !== "" ? "sun" : "moon"} width={24} />
         </span>
       </div>

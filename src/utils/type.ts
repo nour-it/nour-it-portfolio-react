@@ -1,62 +1,60 @@
-
-
 export type Service = {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     services: Object[],
-    previousRole: String,
+    previousRole: string,
     resumeLink: string,
     more: string,
 }
 
 export type HomeIntro = {
-    title: String,
-    descriptions: String[],
+    title: string,
+    descriptions: string[],
     say: string
 }
 
 export type AboutType = {
-    value: String,
-    icon: String
+    value: string,
+    icon: string
 }
 
 export type HomeAbout = {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     abouts: Object[],
-    previousRole: String,
+    previousRole: string,
     resumeLink: string,
     download: string
 }
 
 export type Qualificaton = {
-    title: String
-    subtitle: String
+    title: string
+    subtitle: string
     categories: Object[]
     qualifications: Object[]
 }
 
 export type Client = {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     clients: Object[],
 }
 
 export type Contact = {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     contacts: Object[],
     write: string,
     send: string,
     talk: "string",
-    with: string,  
+    with: string,
     form: any,
     alert: string
 }
 
 export type Skill = {
-    title: String,
-    subtitle: String,
+    title: string,
+    subtitle: string,
     skills: Object[],
 }
 
@@ -71,7 +69,7 @@ export type project = {
     description: string,
     link: string,
     completed: boolean,
-    style: object,
+    style: React.CSSProperties,
     plateform: string,
     imgs: string[],
 }

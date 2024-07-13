@@ -55,7 +55,6 @@ export function changeNavOnElementAppear(
   return observer;
 }
 
-
 export function log(...values: any[]): void {
   console.log(values)
 }
